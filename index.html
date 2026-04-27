@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GFT1 Methylene Blue — D2C Marketing Plan</title>
+  <style>
+    :root {
+      --red: #2d7a3a;
+      --dark: #1a3d24;
+      --mid: #2d5c38;
+      --card: #fffdf5;
+      --border: #d4e8c2;
+      --text: #1a3d24;
+      --muted: #5a7a5e;
+      --light: #f5f9f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 0;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 24px 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    header h1 span { color: var(--red); }
+
+    .header-meta {
+      color: #9ca3af;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--mid);
+      border-bottom: 3px solid var(--red);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+    }
+
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 14px 16px;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -3px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    nav a:hover {
+      color: white;
+      border-bottom-color: var(--red);
+    }
+
+    /* MAIN LAYOUT */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 56px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+
+    section > h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .card p, .card li {
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .card ul li {
+      margin-bottom: 6px;
+    }
+
+    /* GRID */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 700px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.5rem; }
+    }
+
+    /* HIGHLIGHT CARD */
+    .card-highlight {
+      background: var(--dark);
+      color: white;
+      border: none;
+    }
+
+    .card-highlight h3 { color: white; }
+    .card-highlight p, .card-highlight li { color: #d1d5db; }
+
+    .card-red {
+      background: #2d7a3a;
+      color: white;
+      border: none;
+    }
+
+    .card-red h3 { color: #f5f0dc; }
+    .card-red p, .card-red li { color: rgba(255,255,255,0.92); }
+
+    /* POSITIONING STATEMENT */
+    .position-block {
+      background: var(--dark);
+      border-left: 5px solid var(--red);
+      color: white;
+      padding: 28px 32px;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    /* TABLES */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: white;
+    }
+
+    thead {
+      background: var(--dark);
+      color: white;
+    }
+
+    thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    tbody tr:nth-child(even) { background: var(--light); }
+    tbody tr:hover { background: #eaf5e0; }
+
+    tbody td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+
+    /* FLOW STEPS */
+    .flow-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .flow-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+    }
+
+    .flow-num {
+      background: var(--red);
+      color: white;
+      font-weight: 800;
+      font-size: 13px;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .flow-content h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .flow-content p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* METRICS */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 700px) {
+      .metrics-row { grid-template-columns: 1fr; }
+    }
+
+    .metric-card {
+      background: #fffdf5;
+      border: 1px solid var(--border);
+      border-top: 4px solid #2d7a3a;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .metric-card .metric-num {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #2d7a3a;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .metric-card .metric-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .metric-card .metric-desc {
+      font-size: 13px;
+      color: #374151;
+    }
+
+    /* ALERT */
+    .alert {
+      background: #eef8e6;
+      border: 1px solid #7dba6e;
+      border-left: 4px solid #2d7a3a;
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .alert strong { color: #1a3d24; }
+
+    /* WEEK TIMELINE */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 20px;
+      padding: 0 0 24px 0;
+      position: relative;
+    }
+
+    .timeline-item:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .timeline-dot {
+      min-width: 40px;
+      height: 40px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .timeline-body {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      flex: 1;
+    }
+
+    .timeline-body h4 {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-body ul {
+      padding-left: 16px;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .timeline-body ul li { margin-bottom: 4px; }
+
+    /* OPEN ITEMS */
+    .open-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+    }
+
+    .open-icon {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .open-text h4 { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+    .open-text p { font-size: 13px; color: var(--muted); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #9ca3af;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+    footer strong { color: white; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="badge">Horsepower AI — Confidential</div>
+    <h1>GFT1 Methylene Blue<br><span>D2C Marketing Plan</span></h1>
+    <div class="header-meta">Prepared by Jeffrey Najar &nbsp;|&nbsp; Horsepower AI &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Smart Aging Launch Strategy</div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#positioning">Positioning</a>
+    <a href="#offer">Offer</a>
+    <a href="#affiliates">Affiliates</a>
+    <a href="#store">Store</a>
+    <a href="#email">Email Flows</a>
+    <a href="#budget">Budget</a>
+    <a href="#launch">Launch Plan</a>
+    <a href="#metrics">Metrics</a>
+    <a href="#decisions">Open Decisions</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+  <!-- POSITIONING -->
+  <section id="positioning">
+    <div class="section-label">Section 01</div>
+    <h2>Strategic Foundation &amp; Positioning</h2>
+
+    <div class="position-block">
+      "Your brain ran a company. Built a family. Outlasted everyone's expectations. Now give it the fuel it deserves."
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Target Audience</h3>
+        <p>Boomers and GenX — health-conscious, supplement-curious, open to wellness innovation. They want to feel sharp, energized, and in control of how they age.</p>
+      </div>
+      <div class="card">
+        <h3>The One Feeling</h3>
+        <p><strong>"This was made for me."</strong><br><br>Not a biohacker product. Not a medical drug. A smart, clean supplement for people who take their health seriously.</p>
+      </div>
+      <div class="card">
+        <h3>Lead With</h3>
+        <p><strong>Energy. Clarity. Feeling sharp.</strong><br><br>Science supports the story — it does not lead it. The customer feels first, understands second.</p>
+      </div>
+    </div>
+
+    <div class="card card-highlight">
+      <h3>The Audience Advantage</h3>
+      <p>Your cannabis associate network already holds warm lists of wellness explorers — Boomers and GenX who self-identify as health-conscious and are used to spending money on feeling good. That is the best possible starting audience for a new supplement. They are not skeptics. They are buyers.</p>
+    </div>
+  </section>
+
+  <!-- OFFER -->
+  <section id="offer">
+    <div class="section-label">Section 02</div>
+    <h2>The Offer Architecture</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Offer</th>
+            <th>Price</th>
+            <th>Goal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1 — Entry</strong></td>
+            <td>Free Sample Pack + Shipping</td>
+            <td>$0 + $4.95 S&H</td>
+            <td>Get the email. Get the product in their hands.</td>
+          </tr>
+          <tr>
+            <td><strong>2 — Core</strong></td>
+            <td>30-Day Supply</td>
+            <td>$44.95</td>
+            <td>First real purchase. Establishes the habit.</td>
+          </tr>
+          <tr>
+            <td><strong>3 — Recurring</strong></td>
+            <td>Monthly Subscription</td>
+            <td>$34.95/month</td>
+            <td>Recurring revenue. The business model.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Why Free + Shipping Works</h3>
+        <ul>
+          <li>Buyer self-qualifies — anyone paying $4.95 shipping is a real prospect</li>
+          <li>Credit card captured = email captured = Klaviyo activated</li>
+          <li>Cost per lead drops dramatically vs. paid ads</li>
+          <li>Product in their hands = the best salesperson you have</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sample Pack Contents</h3>
+        <ul>
+          <li>5–7 day supply — enough to feel something</li>
+          <li>Not enough to finish — the gap creates conversion urgency</li>
+          <li>Include a card with the 30-day offer and a QR code</li>
+          <li>The moment the sample runs out is when the sale happens</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFFILIATES -->
+  <section id="affiliates">
+    <div class="section-label">Section 03</div>
+    <h2>Associate Affiliate Program</h2>
+
+    <div class="grid-2">
+      <div class="card card-red">
+        <h3>Commission Structure</h3>
+        <p style="font-size:2rem;font-weight:900;margin:8px 0;">20%</p>
+        <p>Straight commission on every sale — sample, 30-day, and subscription — generated through their unique link.</p>
+      </div>
+      <div class="card">
+        <h3>Individual Landing Pages</h3>
+        <p>Each associate gets a dedicated Shopify landing page with a unique tracking URL. This lets you:</p>
+        <ul>
+          <li>Track exactly who is converting</li>
+          <li>Optimize the message per audience</li>
+          <li>Give associates ownership — they promote more</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Two Associate Options</h3>
+      <div class="grid-2">
+        <div>
+          <strong>Option A — They Email Their List</strong>
+          <ul style="margin-top:8px;">
+            <li>Associate controls the relationship</li>
+            <li>You provide 3 pre-written email templates</li>
+            <li>They send, you get the leads at checkout</li>
+            <li>Best for associates with engaged audiences</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Option B — They Hand Over Contacts</strong>
+          <ul style="margin-top:8px;">
+            <li>You email on their behalf</li>
+            <li>Same 20% commission</li>
+            <li>More control over messaging and timing</li>
+            <li>Best for associates with less time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Associate Onboarding Kit (Build Once, Use Forever)</h3>
+      <div class="grid-3">
+        <div>
+          <strong>3 Email Templates</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Pre-written, ready to send as-is. Each one leads with a different angle: energy, clarity, aging.</p>
+        </div>
+        <div>
+          <strong>Unique Landing Page URL</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Their page, their link, their tracking. Managed in Shopify with UpPromote or Refersion.</p>
+        </div>
+        <div>
+          <strong>Product One-Pager</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Key talking points, what it is, what it does, what to say and what NOT to say (FDA compliance).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <strong>Recommended Shopify Affiliate App:</strong> UpPromote or Refersion — both under $30/month and integrate directly with Klaviyo for automated commission tracking.
+    </div>
+  </section>
+
+  <!-- STORE -->
+  <section id="store">
+    <div class="section-label">Section 04</div>
+    <h2>The Shopify Store</h2>
+
+    <div class="card">
+      <h3>Minimum Viable Pages at Launch</h3>
+      <div class="flow-container">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div class="flow-content">
+            <h4>Homepage</h4>
+            <p>Hero message, free sample offer, social proof, email signup. One clear CTA above the fold.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <div class="flow-content">
+            <h4>Product Page</h4>
+            <p>One product, three options: sample pack, 30-day supply, monthly subscription. Recharge or Bold Subscriptions handles recurring billing.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div class="flow-content">
+            <h4>Associate Landing Pages</h4>
+            <p>Template duplicated per associate with unique URL. Personalized headline, same offer.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <div class="flow-content">
+            <h4>About Page</h4>
+            <p>The science, the story, the mission. This is where trust is built for the skeptical Boomer buyer.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">5</div>
+          <div class="flow-content">
+            <h4>FAQ Page</h4>
+            <p>Address the blue urine/staining question head-on. Transparency builds trust. Cover safety, dosing, and drug interactions clearly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-highlight">
+      <h3>Homepage Hero Copy Direction</h3>
+      <p style="font-size:1.1rem;font-style:italic;margin:12px 0 16px;">"Your brain ran a company. Built a family. Outlasted everyone's expectations. Now give it the fuel it deserves."</p>
+      <p style="background:var(--red);display:inline-block;padding:10px 24px;border-radius:4px;font-weight:700;font-size:14px;">Get Your Free Sample — Just Pay Shipping →</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Key Shopify Apps Needed</h3>
+        <ul>
+          <li><strong>Recharge</strong> or <strong>Bold Subscriptions</strong> — recurring billing</li>
+          <li><strong>UpPromote</strong> or <strong>Refersion</strong> — affiliate tracking</li>
+          <li><strong>Klaviyo</strong> — already paid, connects natively</li>
+          <li><strong>Exit intent popup</strong> — email capture before they leave</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Critical Setup Rules</h3>
+        <ul>
+          <li>Capture email <em>before</em> payment processes (Klaviyo abandoned cart requires this)</li>
+          <li>Post-purchase upsell: offer 30-day supply immediately after sample checkout</li>
+          <li>Every page has a visible email signup — list building never stops</li>
+          <li>Lead magnet: "Smart Aging Guide" PDF for email signups who don't buy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL FLOWS -->
+  <section id="email">
+    <div class="section-label">Section 05</div>
+    <h2>Klaviyo Email Automation</h2>
+
+    <p style="margin-bottom:24px;color:#374151;">Five flows run automatically once built. This is the engine. Every email below fires without you touching it.</p>
+
+    <!-- Flow 1 -->
+    <div class="card" style="margin-bottom:24px;">
+      <h3 style="color:var(--red);margin-bottom:16px;">Flow 1 — Sample Request Flow</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Sample pack purchased</p>
+      <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Timing</th><th>Subject Direction</th><th>Goal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Immediately</td><td>"Your sample is on its way"</td><td>Confirm, build excitement</td></tr>
+            <tr><td>2</td><td>Day 3</td><td>"It takes 3 days to notice. Here's what to watch for."</td><td>Education, set expectations</td></tr>
+            <tr><td>3</td><td>Day 5</td><td>"How are you feeling?"</td><td>Engagement, reply trigger</td></tr>
+            <tr><td>4</td><td>Day 7</td><td>"Ready for the full month?"</td><td>Convert to 30-day supply</td></tr>
+            <tr><td>5</td><td>Day 10</td><td>"Here's what 30 days does"</td><td>Second conversion attempt</td></tr>
+            <tr><td>6</td><td>Day 14</td><td>Last chance — 10% off 30-day supply</td><td>Final push</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Flow 2 -->
+    <div class="card" style="margin-bottom:24px;">
+      <h3 style="color:var(--red);margin-bottom:16px;">Flow 2 — 30-Day Purchase Welcome Flow</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> 30-day supply purchased</p>
+      <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Timing</th><th>Subject Direction</th><th>Goal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Immediately</td><td>"Welcome. Here's how to get the most out of it."</td><td>Onboard, reduce buyer's remorse</td></tr>
+            <tr><td>2</td><td>Day 3</td><td>"The science behind why you feel this"</td><td>Build conviction</td></tr>
+            <tr><td>3</td><td>Day 10</td><td>"You're 1/3 of the way through. Notice anything?"</td><td>Engagement</td></tr>
+            <tr><td>4</td><td>Day 20</td><td>"Lock in your price before it runs out"</td><td>Convert to subscription</td></tr>
+            <tr><td>5</td><td>Day 27</td><td>"3 days left — subscribe and never run out"</td><td>Subscription conversion</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Flow 3 -->
+    <div class="card" style="margin-bottom:24px;">
+      <h3 style="color:var(--red);margin-bottom:16px;">Flow 3 — Subscription Welcome Flow</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Subscription activated</p>
+      <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Timing</th><th>Goal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Immediately</td><td>Welcome to the tribe. Reinforce the decision.</td></tr>
+            <tr><td>2</td><td>Day 7</td><td>Referral ask — "Know someone who should try this?"</td></tr>
+            <tr><td>3</td><td>Day 30</td><td>Check-in + review request</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Flow 4 -->
+    <div class="card" style="margin-bottom:24px;">
+      <h3 style="color:var(--red);margin-bottom:16px;">Flow 4 — Abandoned Cart</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Email captured at checkout, purchase not completed</p>
+      <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Timing</th><th>Subject Direction</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>1 hour</td><td>"You forgot something"</td></tr>
+            <tr><td>2</td><td>24 hours</td><td>"Still thinking? Here's what others are saying."</td></tr>
+            <tr><td>3</td><td>72 hours</td><td>Final nudge — small incentive if budget allows</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Flow 5 -->
+    <div class="card">
+      <h3 style="color:var(--red);margin-bottom:16px;">Flow 5 — Win-Back</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> No purchase 60 days after sample, or subscription cancelled</p>
+      <div class="table-wrap" style="border:none;border-radius:0;">
+        <table>
+          <thead>
+            <tr><th>Email</th><th>Timing</th><th>Goal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Day 60</td><td>"We miss you — here's what you've been missing"</td></tr>
+            <tr><td>2</td><td>Day 75</td><td>Final offer — come back incentive</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUDGET -->
+  <section id="budget">
+    <div class="section-label">Section 06</div>
+    <h2>Budget Allocation ($1,000–$5,000)</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Estimated Cost</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Sample pack production (first run)</strong></td><td>$1,500–$2,000</td><td>200–300 units to start</td></tr>
+          <tr><td><strong>Shipping supplies + postage</strong></td><td>$300–$500</td><td>$4.95 recovered from buyer at checkout</td></tr>
+          <tr><td><strong>Shopify affiliate app (UpPromote)</strong></td><td>$30/month</td><td>Tracks associate commissions automatically</td></tr>
+          <tr><td><strong>Recharge subscription app</strong></td><td>$99/month</td><td>Handles all recurring billing</td></tr>
+          <tr><td><strong>Landing page design</strong></td><td>$0</td><td>Use Shopify templates — no custom dev needed</td></tr>
+          <tr><td><strong>Lead magnet PDF design</strong></td><td>$100–$200</td><td>Canva or freelancer — "Smart Aging Guide"</td></tr>
+          <tr><td><strong>Klaviyo</strong></td><td>Already paid</td><td>Flows are your only labor cost</td></tr>
+          <tr><td><strong>Reserve</strong></td><td>$500–$1,000</td><td>Contingency + second sample run if launch converts</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card card-red">
+      <h3>Total Estimated Startup Cost</h3>
+      <p style="font-size:2rem;font-weight:900;margin:8px 0;">$2,500–$3,800</p>
+      <p>Klaviyo is already paid. Shopify is Skylar's build. Your real cost is sample inventory and the apps. The free + shipping model means buyers partially fund their own acquisition.</p>
+    </div>
+  </section>
+
+  <!-- LAUNCH PLAN -->
+  <section id="launch">
+    <div class="section-label">Section 07</div>
+    <h2>Launch Sequence</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">W1</div>
+        <div class="timeline-body">
+          <h4>Week 1 — Foundation</h4>
+          <ul>
+            <li>Finalize brand name + product name</li>
+            <li>Lock domain and Shopify theme</li>
+            <li>Order first sample pack run (200–300 units)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">W2</div>
+        <div class="timeline-body">
+          <h4>Week 2 — Store + Email</h4>
+          <ul>
+            <li>Shopify store built: homepage, product page, FAQ, about</li>
+            <li>Klaviyo flows built: sample flow + abandoned cart (minimum)</li>
+            <li>Install Recharge + UpPromote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">W3</div>
+        <div class="timeline-body">
+          <h4>Week 3 — Affiliate Setup</h4>
+          <ul>
+            <li>First 3–5 associate landing pages live</li>
+            <li>Associate onboarding kits sent</li>
+            <li>Collect Option A/B decision from each associate</li>
+            <li>Email templates written and approved</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">W4</div>
+        <div class="timeline-body">
+          <h4>Week 4 — Soft Launch</h4>
+          <ul>
+            <li>Associates email their lists</li>
+            <li>Monitor open rates, click rates, sample claim rate</li>
+            <li>First orders ship from GFT1</li>
+            <li>Klaviyo flows activate automatically</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">W6</div>
+        <div class="timeline-body">
+          <h4>Weeks 5–6 — Optimize</h4>
+          <ul>
+            <li>Review conversion data — what's working, what isn't</li>
+            <li>Build remaining Klaviyo flows (30-day welcome, win-back)</li>
+            <li>Add more associates based on initial results</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">W8</div>
+        <div class="timeline-body">
+          <h4>Week 8 — Assessment</h4>
+          <ul>
+            <li>Review all three key metrics (see below)</li>
+            <li>Reorder sample inventory if launch is converting</li>
+            <li>Present data to Kent Rhodes for next phase decisions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section id="metrics">
+    <div class="section-label">Section 08</div>
+    <h2>The Three Numbers That Tell You Everything</h2>
+
+    <div class="metrics-row">
+      <div class="metric-card">
+        <div class="metric-label">Target</div>
+        <div class="metric-num">&lt;$5</div>
+        <div class="metric-label">Cost Per Sample Request</div>
+        <div class="metric-desc">How much does it cost to get one person to claim a free sample? Under $5 means the model works.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Target</div>
+        <div class="metric-num">15–25%</div>
+        <div class="metric-label">Sample → 30-Day Conversion</div>
+        <div class="metric-desc">How many sample claimants buy the full 30-day supply? This is your most important conversion number.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Target</div>
+        <div class="metric-num">30–40%</div>
+        <div class="metric-label">30-Day → Subscription</div>
+        <div class="metric-desc">How many 30-day buyers go monthly? This is where the business model lives.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>List Building — Beyond Associates</h3>
+      <div class="grid-3">
+        <div>
+          <strong>Lead Magnet</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">"The Smart Aging Guide: 5 Things Boomers Are Doing to Stay Sharp in 2026" — free PDF captures email without requiring a purchase.</p>
+        </div>
+        <div>
+          <strong>Exit Intent Popup</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">On all pages. Offer the lead magnet or a discount on the sample. Captures people who are leaving without buying.</p>
+        </div>
+        <div>
+          <strong>Referral Loop</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Every customer who leaves a review gets a referral link with commission. Turns buyers into associates automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN DECISIONS -->
+  <section id="decisions">
+    <div class="section-label">Section 09</div>
+    <h2>Open Decisions — Needed Before Launch</h2>
+
+    <p style="margin-bottom:20px;color:#374151;">These must be resolved at the next GFT1 meeting before any launch commitments are made.</p>
+
+    <div class="open-item">
+      <div class="open-icon">🏷️</div>
+      <div class="open-text">
+        <h4>Brand Name</h4>
+        <p>BlueVero or something else? Name drives domain, packaging, and all creative assets. Decision blocks everything downstream.</p>
+      </div>
+    </div>
+    <div class="open-item">
+      <div class="open-icon">💊</div>
+      <div class="open-text">
+        <h4>Product Names</h4>
+        <p>MB-C and MB-CL are placeholders. Consumer-facing names needed before packaging and landing pages can be finalized.</p>
+      </div>
+    </div>
+    <div class="open-item">
+      <div class="open-icon">💰</div>
+      <div class="open-text">
+        <h4>Confirmed Price Points</h4>
+        <p>Sample + 30-day + subscription. Prices shown in this plan are recommended — need Kent and team sign-off.</p>
+      </div>
+    </div>
+    <div class="open-item">
+      <div class="open-icon">📧</div>
+      <div class="open-text">
+        <h4>Associate Option A vs. B</h4>
+        <p>Do associates email their own lists, or hand over contacts? This determines who controls the first touchpoint and impacts deliverability.</p>
+      </div>
+    </div>
+    <div class="open-item">
+      <div class="open-icon">⚖️</div>
+      <div class="open-text">
+        <h4>FDA Compliance Review</h4>
+        <p>The regulatory risk on MB as a supplement is high. Legal sign-off is required before any claims go live on the site, in email, or on packaging. This is not optional.</p>
+      </div>
+    </div>
+    <div class="open-item">
+      <div class="open-icon">🔬</div>
+      <div class="open-text">
+        <h4>Lab Confirmation — MB-CL</h4>
+        <p>Can the lab produce Leuco MB specifically? Can they produce effervescent fizz format? "No staining" claim requires Leuco form — standard MB does not deliver this.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Horsepower AI</strong> &nbsp;|&nbsp; Prepared by Jeffrey Najar &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Confidential — Internal Use Only
+</footer>
+
+</body>
+</html>
