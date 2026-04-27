@@ -27,12 +27,7 @@
       line-height: 1.7;
     }
 
-    /* HEADER */
-    header {
-      background: var(--dark);
-      color: white;
-      padding: 0;
-    }
+    header { background: var(--dark); color: white; }
 
     .header-inner {
       max-width: 1100px;
@@ -68,19 +63,6 @@
       text-transform: uppercase;
     }
 
-    .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.15);
-      color: #d4e8c2;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 2px;
-      margin-bottom: 16px;
-    }
-
     header h1 {
       font-size: 2.2rem;
       font-weight: 800;
@@ -90,19 +72,9 @@
     }
 
     header h1 span { color: var(--light-green); }
+    .header-meta { color: #9ca3af; font-size: 13px; margin-top: 12px; }
 
-    .header-meta {
-      color: #9ca3af;
-      font-size: 13px;
-      margin-top: 12px;
-    }
-
-    /* PHASE STRIP */
-    .phase-strip {
-      background: var(--green);
-      padding: 0;
-    }
-
+    .phase-strip { background: var(--green); }
     .phase-strip-inner {
       max-width: 1100px;
       margin: 0 auto;
@@ -114,22 +86,13 @@
       padding: 12px 24px;
       font-size: 13px;
       font-weight: 700;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.55);
       border-bottom: 3px solid transparent;
-      cursor: default;
     }
 
-    .phase-pill.active {
-      color: white;
-      border-bottom-color: #d4e8c2;
-    }
+    .phase-pill.active { color: white; border-bottom-color: #d4e8c2; }
+    .phase-pill.future { color: rgba(255,255,255,0.35); font-style: italic; }
 
-    .phase-pill.future {
-      color: rgba(255,255,255,0.4);
-      font-style: italic;
-    }
-
-    /* NAV */
     nav {
       background: var(--mid);
       border-bottom: 3px solid var(--light-green);
@@ -143,7 +106,6 @@
       margin: 0 auto;
       padding: 0 24px;
       display: flex;
-      gap: 0;
       overflow-x: auto;
     }
 
@@ -159,12 +121,8 @@
       transition: color 0.2s, border-color 0.2s;
     }
 
-    nav a:hover {
-      color: white;
-      border-bottom-color: var(--light-green);
-    }
+    nav a:hover { color: white; border-bottom-color: var(--light-green); }
 
-    /* MAIN */
     main {
       max-width: 1100px;
       margin: 0 auto;
@@ -196,9 +154,7 @@
       vertical-align: middle;
     }
 
-    .phase-tag.future {
-      background: #9ca3af;
-    }
+    .phase-tag.future { background: #9ca3af; }
 
     section > h2 {
       font-size: 1.6rem;
@@ -208,7 +164,6 @@
       border-bottom: 2px solid var(--border);
     }
 
-    /* CARDS */
     .card {
       background: var(--cream);
       border: 1px solid var(--border);
@@ -230,79 +185,55 @@
       header h1 { font-size: 1.5rem; }
     }
 
-    .card-dark {
-      background: var(--dark);
-      color: white;
-      border: none;
-    }
+    .card-dark { background: var(--dark); color: white; border: none; }
     .card-dark h3 { color: white; }
     .card-dark p, .card-dark li { color: #d1d5db; }
 
-    .card-green {
-      background: var(--green);
-      color: white;
-      border: none;
-    }
+    .card-green { background: var(--green); color: white; border: none; }
     .card-green h3 { color: #d4e8c2; }
     .card-green p, .card-green li { color: rgba(255,255,255,0.9); }
 
-    .card-muted {
-      background: #f3f4f6;
-      border: 1px dashed #d1d5db;
-      opacity: 0.8;
-    }
+    .card-muted { background: #f3f4f6; border: 1px dashed #d1d5db; opacity: 0.75; }
+    .card-muted h3 { color: #9ca3af; }
+    .card-muted p, .card-muted li { color: #9ca3af; }
 
-    /* POSITIONING BLOCK */
     .position-block {
       background: var(--dark);
       border-left: 5px solid var(--light-green);
       color: white;
       padding: 28px 32px;
       border-radius: 8px;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-style: italic;
       line-height: 1.8;
       margin-bottom: 24px;
     }
 
-    /* AUDIENCE CARDS */
-    .audience-grid {
+    .phase-compare {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
       margin-bottom: 24px;
     }
 
-    .audience-card {
-      border-radius: 8px;
-      padding: 20px 24px;
-      border: 1px solid var(--border);
+    .phase-box { border-radius: 8px; padding: 24px; }
+    .phase-box.p1 { background: var(--cream); border: 2px solid var(--green); }
+    .phase-box.p2 { background: #f9fafb; border: 2px dashed #d1d5db; }
+
+    .phase-box h3 {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
     }
 
-    .audience-card.active {
-      background: var(--cream);
-      border-left: 5px solid var(--green);
-    }
+    .phase-box.p1 h3 { color: var(--green); }
+    .phase-box.p2 h3 { color: #9ca3af; }
+    .phase-box ul { padding-left: 16px; font-size: 13px; }
+    .phase-box.p1 ul li { color: #374151; margin-bottom: 6px; }
+    .phase-box.p2 ul li { color: #9ca3af; margin-bottom: 6px; }
 
-    .audience-card.future {
-      background: #f9fafb;
-      border: 1px dashed #d1d5db;
-      opacity: 0.7;
-    }
-
-    .audience-card h3 {
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .audience-card p { font-size: 13px; color: #374151; }
-    .audience-card.future p { color: #9ca3af; }
-
-    /* TABLES */
     .table-wrap {
       overflow-x: auto;
       border-radius: 8px;
@@ -318,7 +249,6 @@
     tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
     tbody tr:last-child td { border-bottom: none; }
 
-    /* FLOW STEPS */
     .flow-container { display: flex; flex-direction: column; gap: 12px; }
 
     .flow-step {
@@ -348,7 +278,6 @@
     .flow-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .flow-content p { font-size: 13px; color: var(--muted); }
 
-    /* METRICS */
     .metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
 
     @media (max-width: 700px) { .metrics-row { grid-template-columns: 1fr; } }
@@ -366,7 +295,6 @@
     .metric-card .metric-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
     .metric-card .metric-desc { font-size: 13px; color: #374151; }
 
-    /* ALERT */
     .alert {
       background: #eef8e6;
       border: 1px solid var(--light-green);
@@ -389,8 +317,7 @@
     }
     .alert-warn strong { color: #7a4f00; }
 
-    /* TIMELINE */
-    .timeline { display: flex; flex-direction: column; gap: 0; }
+    .timeline { display: flex; flex-direction: column; }
 
     .timeline-item {
       display: flex;
@@ -423,10 +350,7 @@
       flex-shrink: 0;
     }
 
-    .timeline-dot.future {
-      background: #d1d5db;
-      color: #6b7280;
-    }
+    .timeline-dot.future { background: #d1d5db; color: #6b7280; }
 
     .timeline-body {
       background: white;
@@ -436,16 +360,11 @@
       flex: 1;
     }
 
-    .timeline-body.future {
-      background: #f9fafb;
-      opacity: 0.7;
-    }
-
+    .timeline-body.future { background: #f9fafb; opacity: 0.7; }
     .timeline-body h4 { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
     .timeline-body ul { padding-left: 16px; font-size: 13px; color: #374151; }
     .timeline-body ul li { margin-bottom: 4px; }
 
-    /* OPEN ITEMS */
     .open-item {
       display: flex;
       align-items: flex-start;
@@ -456,41 +375,46 @@
       padding: 14px 18px;
       margin-bottom: 10px;
     }
+
     .open-icon { font-size: 18px; line-height: 1.4; }
     .open-text h4 { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
     .open-text p { font-size: 13px; color: var(--muted); }
 
-    /* PHASE COMPARISON */
-    .phase-compare {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .phase-box {
+    .tp-card {
+      background: var(--dark);
       border-radius: 8px;
-      padding: 24px;
-      border: 2px solid var(--green);
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      border-left: 5px solid var(--light-green);
     }
 
-    .phase-box.p1 { background: var(--cream); }
-    .phase-box.p2 { background: #f9fafb; border-color: #d1d5db; border-style: dashed; }
-
-    .phase-box h3 {
+    .tp-card h3 {
+      color: var(--light-green);
       font-size: 13px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
 
-    .phase-box.p1 h3 { color: var(--green); }
-    .phase-box.p2 h3 { color: #9ca3af; }
+    .tp-card p { color: #d1d5db; font-size: 14px; line-height: 1.8; }
 
-    .phase-box ul { padding-left: 16px; font-size: 13px; color: #374151; }
-    .phase-box ul li { margin-bottom: 6px; }
-    .phase-box.p2 ul li { color: #9ca3af; }
+    .decision-box {
+      background: #fef9ec;
+      border: 2px solid #e6a817;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+
+    .decision-box h3 {
+      color: #7a4f00;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
 
     footer {
       background: var(--dark);
@@ -504,7 +428,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
     <div style="margin-bottom:20px;">
@@ -512,27 +435,26 @@
     </div>
     <div class="phase-banner">
       <span class="phase-num">PHASE 1</span>
-      <span class="phase-label">Cannabis &amp; Biohacker Launch</span>
+      <span class="phase-label">Cannabis Audience Launch</span>
     </div>
     <h1>Methylene Blue<br><span>D2C Marketing Plan</span></h1>
     <div class="header-meta">Prepared by Jeffrey Najar, VP Marketing &nbsp;|&nbsp; GF TechOne &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Confidential</div>
   </div>
 </header>
 
-<!-- PHASE STRIP -->
 <div class="phase-strip">
   <div class="phase-strip-inner">
-    <div class="phase-pill active">Phase 1 — Cannabis &amp; Biohackers (Now)</div>
-    <div class="phase-pill future">Phase 2 — Boomers &amp; Executives (90 Days+)</div>
+    <div class="phase-pill active">Phase 1 — Cannabis Audience (Now)</div>
+    <div class="phase-pill future">Phase 2 — Biohackers, Boomers &amp; Beyond (90 Days+)</div>
   </div>
 </div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#overview">Overview</a>
+    <a href="#talking-points">Talking Points</a>
+    <a href="#strategy">Strategy</a>
     <a href="#audience">Audience</a>
-    <a href="#positioning">Positioning</a>
+    <a href="#positioning">Message</a>
     <a href="#offer">Offer</a>
     <a href="#affiliates">Affiliates</a>
     <a href="#store">Store</a>
@@ -546,130 +468,179 @@
 
 <main>
 
-  <!-- OVERVIEW -->
-  <section id="overview">
-    <div class="section-label">Phase 1 Overview</div>
-    <h2>Why We Start Here <span class="phase-tag">Phase 1</span></h2>
+  <!-- TALKING POINTS -->
+  <section id="talking-points">
+    <div class="section-label">Team Meeting</div>
+    <h2>Talking Points — MB Team Discussion <span class="phase-tag">Phase 1</span></h2>
 
-    <div class="phase-compare">
-      <div class="phase-box p1">
-        <h3>Phase 1 — Launch Now</h3>
-        <ul>
-          <li>Cannabis users &amp; biohackers</li>
-          <li>Athletes &amp; performance seekers</li>
-          <li>Women in perimenopause</li>
-          <li>Warm lists exist today (~2,000 contacts)</li>
-          <li>No paid acquisition needed to start</li>
-          <li>Fast revenue funds Phase 2</li>
-          <li>These audiences are MB-curious already</li>
+    <div class="tp-card">
+      <h3>One Audience. One Message. One Campaign.</h3>
+      <p>We have a cannabis list of approximately 2,000 warm contacts. That is our entire Phase 1 audience. We are not splitting it. We are not testing multiple messages. We run one focused campaign to one group, learn what converts, and use that data and revenue to fund Phase 2.</p>
+    </div>
+
+    <div class="tp-card">
+      <h3>Phase 1 Is Not the Full Vision — It Funds It</h3>
+      <p>Biohackers, Boomers, athletes, and executives are real opportunities — but they require separate lists, separate budgets, and separate strategies we don't have yet. Phase 1 generates the revenue, testimonials, and credibility that open those doors. We build Phase 2 with Phase 1 money.</p>
+    </div>
+
+    <div class="tp-card">
+      <h3>The Offer Is Simple</h3>
+      <p>Free sample plus $4.95 shipping gets the product in their hands and captures the email. Then a 30-day supply at $44.95. Then a monthly subscription at $34.95. Klaviyo handles the conversion sequence automatically — no manual follow-up required after setup.</p>
+    </div>
+
+    <div class="tp-card">
+      <h3>Associates Get 20% — Zero Budget to Activate</h3>
+      <p>Each cannabis associate gets their own landing page and pre-written email templates. We only pay commission when a sale converts. This is zero-cost customer acquisition until the moment the sale happens.</p>
+    </div>
+
+    <div class="decision-box">
+      <h3>Four Decisions Needed at This Meeting</h3>
+      <div class="grid-2">
+        <ul style="padding-left:18px;font-size:14px;color:#374151;">
+          <li style="margin-bottom:10px;"><strong>Brand name</strong> — BlueVero or something else? Everything waits on this.</li>
+          <li style="margin-bottom:10px;"><strong>Product names</strong> — Consumer-facing names for MB-C and MB-CL.</li>
         </ul>
-      </div>
-      <div class="phase-box p2">
-        <h3>Phase 2 — Build Next</h3>
-        <ul>
-          <li>Boomers (Smart Aging)</li>
-          <li>Executives &amp; high performers</li>
-          <li>No warm lists available yet</li>
-          <li>Requires content, SEO, and budget</li>
-          <li>Funded by Phase 1 revenue</li>
-          <li>Phase 1 testimonials open this door</li>
-          <li>Timeline: 90+ days out</li>
+        <ul style="padding-left:18px;font-size:14px;color:#374151;">
+          <li style="margin-bottom:10px;"><strong>Price points</strong> — Confirm sample, 30-day, and subscription pricing.</li>
+          <li style="margin-bottom:10px;"><strong>FDA compliance review</strong> — Required before anything goes live. Non-negotiable.</li>
         </ul>
       </div>
     </div>
 
     <div class="card card-dark">
-      <h3>The Strategic Logic</h3>
-      <p>The cannabis associate network (Cookies and related) skews 25–40, wellness-oriented, and already open to enhancement and optimization. Biohackers are actively searching for MB right now. These audiences don't need to be educated — they need to be handed the right product. Phase 1 captures fast revenue and builds the social proof that unlocks the Boomer market in Phase 2.</p>
+      <h3 style="font-size:1rem;margin-bottom:16px;">Phase 1 Success Targets</h3>
+      <div class="metrics-row" style="margin-bottom:0;">
+        <div class="metric-card" style="background:rgba(255,255,255,0.07);border-color:var(--light-green);border-top-color:var(--light-green);">
+          <div class="metric-num" style="color:var(--light-green);">200–300</div>
+          <div class="metric-label" style="color:#9ca3af;">Samples Shipped</div>
+          <div class="metric-desc" style="color:#d1d5db;">In the first 30 days</div>
+        </div>
+        <div class="metric-card" style="background:rgba(255,255,255,0.07);border-color:var(--light-green);border-top-color:var(--light-green);">
+          <div class="metric-num" style="color:var(--light-green);">15–25%</div>
+          <div class="metric-label" style="color:#9ca3af;">Sample → 30-Day</div>
+          <div class="metric-desc" style="color:#d1d5db;">Conversion from free sample to paid</div>
+        </div>
+        <div class="metric-card" style="background:rgba(255,255,255,0.07);border-color:var(--light-green);border-top-color:var(--light-green);">
+          <div class="metric-num" style="color:var(--light-green);">30–40%</div>
+          <div class="metric-label" style="color:#9ca3af;">30-Day → Subscription</div>
+          <div class="metric-desc" style="color:#d1d5db;">Recurring revenue is the model</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY -->
+  <section id="strategy">
+    <div class="section-label">Section 01</div>
+    <h2>Phase Strategy <span class="phase-tag">Phase 1</span></h2>
+
+    <div class="phase-compare">
+      <div class="phase-box p1">
+        <h3>Phase 1 — Launch Now</h3>
+        <ul>
+          <li>Single audience: cannabis users</li>
+          <li>Single message: clean enhancement</li>
+          <li>Warm list of ~2,000 contacts ready today</li>
+          <li>Zero paid acquisition to start</li>
+          <li>Associates activate through their own networks</li>
+          <li>Fast revenue funds everything next</li>
+        </ul>
+      </div>
+      <div class="phase-box p2">
+        <h3>Phase 2 — Build Next (90+ Days)</h3>
+        <ul>
+          <li>Biohackers — separate list required</li>
+          <li>Boomers — content and SEO strategy</li>
+          <li>Athletes — fitness channel outreach</li>
+          <li>Women in perimenopause — community play</li>
+          <li>Executives — LinkedIn and referrals</li>
+          <li>Funded entirely by Phase 1 revenue</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card card-dark">
+      <h3>Why One Audience First</h3>
+      <p>2,000 contacts is not enough volume to split-test multiple messages or run a multi-arm strategy meaningfully. You need hundreds of conversions per arm to draw conclusions — we're not there yet. One focused campaign gives us clean data, a real conversion rate, and proof of concept. That's what Phase 2 is built on.</p>
     </div>
   </section>
 
   <!-- AUDIENCE -->
   <section id="audience">
-    <div class="section-label">Section 01</div>
-    <h2>Phase 1 Target Audiences <span class="phase-tag">Phase 1</span></h2>
+    <div class="section-label">Section 02</div>
+    <h2>Phase 1 Audience <span class="phase-tag">Phase 1</span></h2>
 
-    <div class="audience-grid">
-      <div class="audience-card active">
-        <h3>Cannabis Users <span class="phase-tag">Phase 1</span></h3>
-        <p>Wellness-oriented, open to body optimization, already comfortable with alternative health products. The Cookies network skews 25–40, culturally forward, and spends on feeling good. Warm lists available now through associates.</p>
+    <div class="card" style="border-left:5px solid var(--green);">
+      <h3>Who We Are Reaching in Phase 1</h3>
+      <p><strong>Cannabis users.</strong> Warm list of approximately 2,000 contacts through cannabis associates — primarily the Cookies network and related. This audience skews 25–40, culturally forward, and already wellness-oriented. They are comfortable with body optimization, open to enhancement products, and spend money on feeling good. They do not need to be convinced that supplements work — they need to be convinced this one is worth trying.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>What We Know About Them</h3>
+        <ul>
+          <li>Already spend on wellness and enhancement products</li>
+          <li>Comfortable with alternative health approaches</li>
+          <li>Responsive to community-driven recommendations</li>
+          <li>Skeptical of corporate health brands — authenticity matters</li>
+          <li>Mobile-first — they are on their phones</li>
+          <li>Trust the associate who sends the recommendation</li>
+        </ul>
       </div>
-      <div class="audience-card active">
-        <h3>Biohackers <span class="phase-tag">Phase 1</span></h3>
-        <p>Already know MB exists. Actively seeking it out. Early adopters who research before buying and evangelize when something works. Loud on Reddit, X/Twitter, and YouTube. Converting one biohacker can drive dozens of referrals.</p>
-      </div>
-      <div class="audience-card active">
-        <h3>Athletes &amp; Performance Seekers <span class="phase-tag">Phase 1</span></h3>
-        <p>Drawn to mitochondrial performance, clean energy, and faster recovery. Already buying supplements. Short sales cycle — they try things. Natural overlap with the cannabis wellness and biohacker communities.</p>
-      </div>
-      <div class="audience-card active">
-        <h3>Women in Perimenopause <span class="phase-tag">Phase 1</span></h3>
-        <p>Brain fog, energy crashes, and mood instability are their top complaints — all directly addressed by MB. Massively underserved by the supplement market. Community-driven and loyal when a product delivers. Strong word-of-mouth multiplier.</p>
+      <div class="card">
+        <h3>What We Do Not Know Yet</h3>
+        <ul>
+          <li>Exact conversion rate for MB within this audience</li>
+          <li>Which message angle lands best</li>
+          <li>Price sensitivity at $44.95 for a 30-day supply</li>
+          <li>Subscription attachment rate</li>
+          <li>Which associates have the most engaged lists</li>
+        </ul>
+        <p style="margin-top:10px;font-style:italic;font-size:13px;">Phase 1 answers all of these questions.</p>
       </div>
     </div>
 
-    <div class="audience-grid">
-      <div class="audience-card future">
-        <h3>Boomers — Smart Aging <span class="phase-tag future">Phase 2</span></h3>
-        <p>No warm lists. Requires content, SEO, and trust-building. Unlocked by Phase 1 revenue and testimonials. Target: 90+ days.</p>
-      </div>
-      <div class="audience-card future">
-        <h3>Executives &amp; High Performers <span class="phase-tag future">Phase 2</span></h3>
-        <p>Cognitive edge and productivity focus. LinkedIn and executive networks. Requires credibility built in Phase 1 first.</p>
-      </div>
+    <div class="card card-muted">
+      <h3>Phase 2 Audiences — Not Yet <span class="phase-tag future">Phase 2</span></h3>
+      <p>Biohackers, Boomers, athletes, executives, and women in perimenopause are strong future audiences for MB — but each requires its own list, its own message, and its own channel strategy. None of those exist today. Phase 2 builds them using Phase 1 revenue and learnings.</p>
     </div>
   </section>
 
   <!-- POSITIONING -->
   <section id="positioning">
-    <div class="section-label">Section 02</div>
-    <h2>Phase 1 Positioning <span class="phase-tag">Phase 1</span></h2>
+    <div class="section-label">Section 03</div>
+    <h2>The Phase 1 Message <span class="phase-tag">Phase 1</span></h2>
 
     <div class="position-block">
-      "Optimized. Sharper. Every day. The compound biohackers, athletes, and wellness leaders have been quietly stacking for years — now clean, formulated, and ready for you."
+      "Clean enhancement for your routine. Stack it. Feel sharper in 72 hours."
     </div>
 
     <div class="grid-3">
       <div class="card">
         <h3>Lead With</h3>
-        <p><strong>Performance and optimization.</strong> This audience doesn't want to be told they're aging. They want to be told they're winning. Energy, clarity, and cognitive edge are the entry points.</p>
+        <p>Enhancement and optimization — language this audience already uses. They are not afraid of stacking products. They want something clean that works with their body, not against it.</p>
       </div>
       <div class="card">
-        <h3>The One Feeling</h3>
-        <p><strong>"I'm ahead of this."</strong> The Phase 1 buyer wants to feel like they found something before everyone else did. Position MB as the compound the informed have been using quietly.</p>
+        <h3>Avoid</h3>
+        <p>Medical claims. Disease language. Anything that sounds pharmaceutical or clinical. This audience trusts wellness — not prescriptions. Keep it experiential and outcome-based.</p>
       </div>
       <div class="card">
         <h3>Science Role</h3>
-        <p><strong>Science validates, lifestyle sells.</strong> Lead with the feeling. Back it with the mitochondrial story. The biohacker audience wants the research — give it to them after the hook lands.</p>
+        <p>Available but not the lead. Put the research on the science page for those who look. The homepage and emails lead with feeling and outcome — not mechanism.</p>
       </div>
     </div>
 
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Audience</th><th>Hook</th><th>Message</th></tr>
+          <tr><th>Touchpoint</th><th>Copy Direction</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td><strong>Cannabis Users</strong></td>
-            <td>Clean enhancement</td>
-            <td>"Stack it with your routine. Feel the difference in 72 hours."</td>
-          </tr>
-          <tr>
-            <td><strong>Biohackers</strong></td>
-            <td>The compound they already know</td>
-            <td>"Pharmaceutical-grade MB. Finally formulated right."</td>
-          </tr>
-          <tr>
-            <td><strong>Athletes</strong></td>
-            <td>Cellular performance</td>
-            <td>"Fuel your mitochondria. Train harder. Recover faster."</td>
-          </tr>
-          <tr>
-            <td><strong>Women in Perimenopause</strong></td>
-            <td>Brain fog is not inevitable</td>
-            <td>"The clarity you've been missing. Without the crash."</td>
-          </tr>
+          <tr><td><strong>Subject line</strong></td><td>"Stack this with your routine. Feel the difference in 72 hours."</td></tr>
+          <tr><td><strong>Landing page hero</strong></td><td>"Clean enhancement. No crash. No stain. Just clarity."</td></tr>
+          <tr><td><strong>Sample CTA</strong></td><td>"Try it free — just cover shipping."</td></tr>
+          <tr><td><strong>30-day upsell</strong></td><td>"Ready to run the full month? Lock in your supply."</td></tr>
+          <tr><td><strong>Subscription pitch</strong></td><td>"Never run out. Cancel anytime. Most people don't."</td></tr>
         </tbody>
       </table>
     </div>
@@ -677,8 +648,8 @@
 
   <!-- OFFER -->
   <section id="offer">
-    <div class="section-label">Section 03</div>
-    <h2>The Offer Architecture <span class="phase-tag">Phase 1</span></h2>
+    <div class="section-label">Section 04</div>
+    <h2>The Offer <span class="phase-tag">Phase 1</span></h2>
 
     <div class="table-wrap">
       <table>
@@ -690,13 +661,13 @@
             <td><strong>1 — Free Entry</strong></td>
             <td>Free Sample Pack + Shipping</td>
             <td>$0 + $4.95 S&amp;H</td>
-            <td>Get it in their hands. Capture the email. Self-qualifies the buyer.</td>
+            <td>Product in hands. Email captured. Buyer self-qualified.</td>
           </tr>
           <tr>
             <td><strong>2 — Core</strong></td>
             <td>30-Day Supply</td>
             <td>$44.95</td>
-            <td>First real purchase. Establishes the habit.</td>
+            <td>First real purchase. Habit established.</td>
           </tr>
           <tr>
             <td><strong>3 — Recurring</strong></td>
@@ -710,21 +681,21 @@
 
     <div class="grid-2">
       <div class="card">
-        <h3>Why Free + Shipping Works for This Audience</h3>
+        <h3>Why Free + Shipping</h3>
         <ul>
-          <li>Biohackers and cannabis users are product-curious — low barrier gets them in</li>
-          <li>$4.95 card entry self-selects real buyers from freebie seekers</li>
-          <li>Email captured at checkout — Klaviyo sequence fires immediately</li>
-          <li>Product in their hands is the best closer — if it works, they subscribe</li>
+          <li>$4.95 entry filters real buyers from freebie seekers</li>
+          <li>Credit card entered = email captured = Klaviyo fires</li>
+          <li>Product experience is the best closer — if it works, they buy</li>
+          <li>The gap when the sample runs out creates purchase urgency</li>
         </ul>
       </div>
       <div class="card">
         <h3>Sample Pack Contents</h3>
         <ul>
           <li>5–7 day supply — enough to feel a difference</li>
-          <li>Insert card: "What you just started" — brief science + what to expect</li>
-          <li>QR code linking to 30-day purchase page</li>
-          <li>The gap when the sample runs out is when the sale happens</li>
+          <li>Insert card: what it is, what to expect, what to watch for</li>
+          <li>QR code linking directly to the 30-day purchase page</li>
+          <li>No disease claims — optimization and enhancement language only</li>
         </ul>
       </div>
     </div>
@@ -732,44 +703,44 @@
 
   <!-- AFFILIATES -->
   <section id="affiliates">
-    <div class="section-label">Section 04</div>
-    <h2>Associate Affiliate Program <span class="phase-tag">Phase 1</span></h2>
+    <div class="section-label">Section 05</div>
+    <h2>Cannabis Associate Program <span class="phase-tag">Phase 1</span></h2>
 
     <div class="grid-2">
       <div class="card card-green">
-        <h3>Commission Structure</h3>
-        <p style="font-size:2.2rem;font-weight:900;margin:8px 0;">20%</p>
-        <p>Straight commission on every sale generated through their unique link — sample, 30-day supply, and subscription.</p>
+        <h3>Commission</h3>
+        <p style="font-size:2.4rem;font-weight:900;margin:8px 0;">20%</p>
+        <p>Straight commission on every sale — sample, 30-day, and subscription — generated through their unique link. We pay only when a sale converts.</p>
       </div>
       <div class="card">
-        <h3>Starting Point</h3>
+        <h3>The Starting Point</h3>
         <ul>
-          <li>Cannabis associate network — Cookies and related</li>
+          <li>Cannabis associate network (Cookies and related)</li>
           <li>~2,000 warm contacts available at launch</li>
-          <li>Already wellness and optimization-minded</li>
-          <li>No paid acquisition needed to activate this channel</li>
           <li>Each associate gets a dedicated landing page</li>
+          <li>Each associate gets a unique tracking URL</li>
+          <li>No ad spend required to activate this channel</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <h3>Two Associate Options</h3>
+      <h3>Two Options for Associates</h3>
       <div class="grid-2">
         <div>
           <strong>Option A — They Email Their List</strong>
           <ul style="margin-top:8px;">
-            <li>Associate sends using your pre-written templates</li>
-            <li>They control the relationship</li>
-            <li>Email captured at checkout — enters your Klaviyo sequence</li>
-            <li>Best for associates with engaged, active audiences</li>
+            <li>Uses our pre-written templates</li>
+            <li>They control the send and timing</li>
+            <li>Email captured at checkout by Klaviyo</li>
+            <li>Best for associates with engaged audiences</li>
           </ul>
         </div>
         <div>
           <strong>Option B — They Hand Over Contacts</strong>
           <ul style="margin-top:8px;">
-            <li>You email on their behalf</li>
-            <li>Same 20% commission</li>
+            <li>We email on their behalf</li>
+            <li>Same 20% commission applies</li>
             <li>Full control over message and timing</li>
             <li>Best for associates with less bandwidth</li>
           </ul>
@@ -782,216 +753,181 @@
       <div class="grid-3">
         <div>
           <strong>3 Email Templates</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Pre-written, ready to send. Each leads with a different angle: cognitive edge, clean energy, performance stack.</p>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Pre-written, ready to send. Cannabis-native language. FDA-compliant. No editing required.</p>
         </div>
         <div>
           <strong>Unique Landing Page</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Their page, their link, their tracking — managed via UpPromote in Shopify.</p>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Their page, their link. Commission tracked automatically via UpPromote in Shopify.</p>
         </div>
         <div>
-          <strong>Compliance One-Pager</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">What to say and what NOT to say. FDA claim boundaries clearly outlined. Protects GFT1 and the associate.</p>
+          <strong>Compliance Guide</strong>
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">What to say and what NOT to say. Protects GFT1 and the associate from FDA enforcement risk.</p>
         </div>
       </div>
-    </div>
-
-    <div class="alert">
-      <strong>Recommended Shopify Affiliate App:</strong> UpPromote or Refersion — under $30/month, integrates directly with Klaviyo for automated commission tracking and associate dashboards.
     </div>
   </section>
 
   <!-- STORE -->
   <section id="store">
-    <div class="section-label">Section 05</div>
+    <div class="section-label">Section 06</div>
     <h2>The Shopify Store <span class="phase-tag">Phase 1</span></h2>
 
     <div class="card">
-      <h3>Minimum Viable Pages at Phase 1 Launch</h3>
+      <h3>Five Pages at Launch — Nothing More</h3>
       <div class="flow-container">
         <div class="flow-step">
           <div class="flow-num">1</div>
           <div class="flow-content">
             <h4>Homepage</h4>
-            <p>Hero message, free sample CTA above the fold, social proof, email signup. One action. No distractions.</p>
+            <p>Hero message, free sample CTA above the fold, one clear action. Cannabis-native tone. Mobile-optimized.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">2</div>
           <div class="flow-content">
             <h4>Product Page</h4>
-            <p>One product, three options: sample, 30-day, monthly subscription. Recharge handles recurring billing. Science section below the fold for the biohacker audience.</p>
+            <p>Sample, 30-day, subscription — three options, one product. Recharge handles recurring billing. Science section below the fold for those who look.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">3</div>
           <div class="flow-content">
             <h4>Associate Landing Pages</h4>
-            <p>Template duplicated per associate with unique tracking URL. Personalized headline matched to their audience.</p>
+            <p>One template, duplicated per associate with unique URL and personalized headline. Tracked via UpPromote.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">4</div>
           <div class="flow-content">
-            <h4>The Science Page</h4>
-            <p>This is critical for the biohacker audience. Research citations, mitochondrial mechanism, dosing context, safety transparency. Builds trust and handles objections before purchase.</p>
+            <h4>Science Page</h4>
+            <p>For the curious buyer. Research citations, mitochondrial mechanism, dosing context. Builds trust without leading with it.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">5</div>
           <div class="flow-content">
-            <h4>FAQ Page</h4>
-            <p>Address blue urine/staining head-on. Cover drug interactions (SSRIs, MAOIs). Dosing guidance. This audience will Google everything — own the answer.</p>
+            <h4>FAQ</h4>
+            <p>Blue urine and staining addressed directly. Drug interactions (SSRIs, MAOIs) covered. This audience Googles everything — own the answer on your own site.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="card card-dark">
-      <h3>Phase 1 Homepage Hero Copy Direction</h3>
-      <p style="font-size:1.05rem;font-style:italic;margin:12px 0 16px;">"The compound biohackers have been quietly stacking for years. Clean. Formulated. Finally available."</p>
+      <h3>Phase 1 Homepage Hero</h3>
+      <p style="font-size:1.1rem;font-style:italic;margin:12px 0 16px;">"Clean enhancement for your routine. Stack it. Feel sharper in 72 hours."</p>
       <p style="background:var(--green);display:inline-block;padding:10px 24px;border-radius:4px;font-weight:700;font-size:14px;">Try It Free — Just Cover Shipping →</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3>Required Shopify Apps</h3>
-        <ul>
-          <li><strong>Recharge</strong> or <strong>Bold Subscriptions</strong> — recurring billing</li>
-          <li><strong>UpPromote</strong> — affiliate tracking per associate</li>
-          <li><strong>Klaviyo</strong> — already active, connects natively</li>
-          <li><strong>Exit intent popup</strong> — captures emails before they leave</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Critical Setup Rules</h3>
-        <ul>
-          <li>Capture email before payment processes — Klaviyo abandoned cart requires this</li>
-          <li>Post-purchase upsell: offer 30-day supply immediately after sample checkout</li>
-          <li>Science section on product page — this audience reads it</li>
-          <li>Mobile-first — cannabis and biohacker audiences are on their phones</li>
-        </ul>
-      </div>
     </div>
   </section>
 
   <!-- EMAIL -->
   <section id="email">
-    <div class="section-label">Section 06</div>
+    <div class="section-label">Section 07</div>
     <h2>Klaviyo Email Automation <span class="phase-tag">Phase 1</span></h2>
 
-    <p style="margin-bottom:24px;color:#374151;">Phase 1 flows are faster and more science-forward than a Boomer sequence. This audience does their own research — the emails support and accelerate that process rather than hand-holding.</p>
+    <p style="margin-bottom:24px;color:#374151;">All five flows fire automatically once built. The cannabis audience is experienced with supplements — the sequence is direct, outcome-focused, and does not over-explain.</p>
 
     <div class="card" style="margin-bottom:24px;">
-      <h3 style="color:var(--green);margin-bottom:16px;">Flow 1 — Sample Request Flow</h3>
+      <h3 style="color:var(--green);margin-bottom:16px;">Flow 1 — Sample Request</h3>
       <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Sample pack purchased</p>
-      <div class="table-wrap" style="border:none;border-radius:0;">
+      <div class="table-wrap" style="border:none;border-radius:0;margin-bottom:0;">
         <table>
           <thead><tr><th>Email</th><th>Timing</th><th>Subject Direction</th><th>Goal</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Immediately</td><td>"Your sample ships today. Here's what to track."</td><td>Set expectations, build excitement</td></tr>
-            <tr><td>2</td><td>Day 2</td><td>"The mitochondrial mechanism — why this works"</td><td>Science credibility for biohacker audience</td></tr>
-            <tr><td>3</td><td>Day 4</td><td>"72 hours in. Notice anything?"</td><td>Engagement, reply trigger</td></tr>
-            <tr><td>4</td><td>Day 6</td><td>"Ready to go full month?"</td><td>Convert to 30-day supply</td></tr>
-            <tr><td>5</td><td>Day 9</td><td>"What stackers are saying after 30 days"</td><td>Social proof, second conversion attempt</td></tr>
-            <tr><td>6</td><td>Day 13</td><td>"Last chance — 10% off your first 30-day order"</td><td>Final push with incentive</td></tr>
+            <tr><td>1</td><td>Immediately</td><td>"Your sample ships today — here's what to track"</td><td>Confirm, set expectations</td></tr>
+            <tr><td>2</td><td>Day 3</td><td>"72 hours in. Noticing anything?"</td><td>Engagement, reply trigger</td></tr>
+            <tr><td>3</td><td>Day 5</td><td>"Most people feel it by day 5. Here's why."</td><td>Science credibility, build conviction</td></tr>
+            <tr><td>4</td><td>Day 7</td><td>"Ready to run the full month?"</td><td>Convert to 30-day supply</td></tr>
+            <tr><td>5</td><td>Day 10</td><td>"What 30 days actually does — from people who ran it"</td><td>Social proof, second conversion attempt</td></tr>
+            <tr><td>6</td><td>Day 14</td><td>"Last call — 10% off your first 30-day order"</td><td>Final push with incentive</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <div class="card" style="margin-bottom:24px;">
-      <h3 style="color:var(--green);margin-bottom:16px;">Flow 2 — 30-Day Purchase Welcome Flow</h3>
+      <h3 style="color:var(--green);margin-bottom:16px;">Flow 2 — 30-Day Purchase Welcome</h3>
       <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> 30-day supply purchased</p>
-      <div class="table-wrap" style="border:none;border-radius:0;">
+      <div class="table-wrap" style="border:none;border-radius:0;margin-bottom:0;">
         <table>
           <thead><tr><th>Email</th><th>Timing</th><th>Subject Direction</th><th>Goal</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Immediately</td><td>"Welcome to the stack. Here's your optimization guide."</td><td>Onboard, reduce buyer's remorse</td></tr>
-            <tr><td>2</td><td>Day 4</td><td>"The dosing protocol — how the pros use it"</td><td>Build habit and conviction</td></tr>
-            <tr><td>3</td><td>Day 12</td><td>"You're 12 days in. Here's what to expect next."</td><td>Engagement, milestone check-in</td></tr>
-            <tr><td>4</td><td>Day 21</td><td>"Lock in your price. Never run out."</td><td>Convert to subscription</td></tr>
-            <tr><td>5</td><td>Day 27</td><td>"3 days left in your supply — subscribe and save"</td><td>Final subscription push</td></tr>
+            <tr><td>1</td><td>Immediately</td><td>"You're in. Here's your optimization guide."</td><td>Onboard, reduce buyer's remorse</td></tr>
+            <tr><td>2</td><td>Day 5</td><td>"How to stack it for best results"</td><td>Build habit and daily usage</td></tr>
+            <tr><td>3</td><td>Day 14</td><td>"Two weeks in — what to expect in the next two"</td><td>Engagement, milestone check-in</td></tr>
+            <tr><td>4</td><td>Day 22</td><td>"Lock in your price. Never run out."</td><td>Convert to subscription</td></tr>
+            <tr><td>5</td><td>Day 28</td><td>"3 days left — subscribe and keep going"</td><td>Final subscription push</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <div class="card" style="margin-bottom:24px;">
-      <h3 style="color:var(--green);margin-bottom:16px;">Flow 3 — Subscription Welcome + Referral Flow</h3>
+      <h3 style="color:var(--green);margin-bottom:16px;">Flow 3 — Subscription + Referral</h3>
       <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Subscription activated</p>
-      <div class="table-wrap" style="border:none;border-radius:0;">
+      <div class="table-wrap" style="border:none;border-radius:0;margin-bottom:0;">
         <table>
           <thead><tr><th>Email</th><th>Timing</th><th>Goal</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Immediately</td><td>Welcome. You're in. Reinforce the decision with community framing.</td></tr>
-            <tr><td>2</td><td>Day 7</td><td>Referral ask — "Who in your circle should know about this?" Commission offered.</td></tr>
-            <tr><td>3</td><td>Day 30</td><td>Review request + check-in. Social proof capture for Phase 2.</td></tr>
+            <tr><td>1</td><td>Immediately</td><td>Welcome. You're locked in. Reinforce the decision.</td></tr>
+            <tr><td>2</td><td>Day 7</td><td>"Who else in your circle should know about this?" — referral link with 20% commission.</td></tr>
+            <tr><td>3</td><td>Day 30</td><td>Review request. Social proof capture for Phase 2 audiences.</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="card" style="margin-bottom:24px;">
-      <h3 style="color:var(--green);margin-bottom:16px;">Flow 4 — Abandoned Cart</h3>
-      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> Email captured at checkout, purchase not completed</p>
-      <div class="table-wrap" style="border:none;border-radius:0;">
-        <table>
-          <thead><tr><th>Email</th><th>Timing</th><th>Subject Direction</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>1 hour</td><td>"You left something behind"</td></tr>
-            <tr><td>2</td><td>24 hours</td><td>"Still thinking? Here's what people say after week one."</td></tr>
-            <tr><td>3</td><td>72 hours</td><td>Final nudge — small incentive if budget allows</td></tr>
-          </tbody>
-        </table>
+    <div class="grid-2">
+      <div class="card" style="margin-bottom:0;">
+        <h3 style="color:var(--green);margin-bottom:12px;">Flow 4 — Abandoned Cart</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:12px;"><strong>Trigger:</strong> Email captured, purchase not completed</p>
+        <ul>
+          <li><strong>1 hour:</strong> "You left something behind"</li>
+          <li><strong>24 hours:</strong> "Still thinking? Here's what people say after week one."</li>
+          <li><strong>72 hours:</strong> Final nudge — small incentive if budget allows</li>
+        </ul>
       </div>
-    </div>
-
-    <div class="card">
-      <h3 style="color:var(--green);margin-bottom:16px;">Flow 5 — Win-Back</h3>
-      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;"><strong>Trigger:</strong> No purchase 60 days after sample, or subscription cancelled</p>
-      <div class="table-wrap" style="border:none;border-radius:0;">
-        <table>
-          <thead><tr><th>Email</th><th>Timing</th><th>Goal</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Day 60</td><td>"Are you still optimizing? Here's what changed."</td></tr>
-            <tr><td>2</td><td>Day 75</td><td>Final offer — come back incentive, new social proof</td></tr>
-          </tbody>
-        </table>
+      <div class="card" style="margin-bottom:0;">
+        <h3 style="color:var(--green);margin-bottom:12px;">Flow 5 — Win-Back</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:12px;"><strong>Trigger:</strong> No purchase 60 days after sample or subscription cancelled</p>
+        <ul>
+          <li><strong>Day 60:</strong> "Are you still optimizing? Here's what you missed."</li>
+          <li><strong>Day 75:</strong> Final offer — come back incentive with new social proof</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- BUDGET -->
   <section id="budget">
-    <div class="section-label">Section 07</div>
-    <h2>Phase 1 Budget ($1,000–$5,000) <span class="phase-tag">Phase 1</span></h2>
+    <div class="section-label">Section 08</div>
+    <h2>Phase 1 Budget <span class="phase-tag">Phase 1</span></h2>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Item</th><th>Estimated Cost</th><th>Notes</th></tr></thead>
+        <thead><tr><th>Item</th><th>Cost</th><th>Notes</th></tr></thead>
         <tbody>
-          <tr><td><strong>Sample pack production (first run)</strong></td><td>$1,500–$2,000</td><td>200–300 units to start</td></tr>
-          <tr><td><strong>Shipping supplies + postage</strong></td><td>$300–$500</td><td>$4.95 recovered from buyer at checkout</td></tr>
-          <tr><td><strong>UpPromote (affiliate app)</strong></td><td>$30/month</td><td>Tracks all associate commissions</td></tr>
-          <tr><td><strong>Recharge (subscription app)</strong></td><td>$99/month</td><td>Handles all recurring billing</td></tr>
-          <tr><td><strong>Landing page design</strong></td><td>$0</td><td>Shopify templates — no custom dev needed</td></tr>
-          <tr><td><strong>Science page content</strong></td><td>$0</td><td>Jeff writes from existing research docs</td></tr>
-          <tr><td><strong>Klaviyo</strong></td><td>Already paid</td><td>Flows are the only labor cost</td></tr>
+          <tr><td><strong>Sample pack production — first run</strong></td><td>$1,500–$2,000</td><td>200–300 units</td></tr>
+          <tr><td><strong>Shipping supplies + postage</strong></td><td>$300–$500</td><td>$4.95 recovered at checkout</td></tr>
+          <tr><td><strong>UpPromote (affiliate tracking)</strong></td><td>$30/month</td><td>Tracks all associate commissions</td></tr>
+          <tr><td><strong>Recharge (subscription billing)</strong></td><td>$99/month</td><td>Handles all recurring orders</td></tr>
+          <tr><td><strong>Shopify + landing pages</strong></td><td>$0</td><td>Skylar's existing build</td></tr>
+          <tr><td><strong>Klaviyo</strong></td><td>Already paid</td><td>Flows are setup labor only</td></tr>
           <tr><td><strong>Reserve</strong></td><td>$500–$1,000</td><td>Second sample run if Phase 1 converts</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="card card-green">
-      <h3>Phase 1 Total Startup Cost</h3>
+      <h3>Phase 1 Total</h3>
       <p style="font-size:2rem;font-weight:900;margin:8px 0;">$2,500–$3,800</p>
-      <p>Klaviyo is already paid. Shopify is Skylar's build. The free + shipping model means buyers partially fund their own acquisition. Phase 1 revenue funds Phase 2.</p>
+      <p>The free + shipping model means buyers partially fund their own acquisition. Phase 1 revenue funds Phase 2 audience development.</p>
     </div>
   </section>
 
   <!-- LAUNCH -->
   <section id="launch">
-    <div class="section-label">Section 08</div>
+    <div class="section-label">Section 09</div>
     <h2>Launch Sequence</h2>
 
     <div class="timeline">
@@ -1000,10 +936,10 @@
         <div class="timeline-body">
           <h4>Week 1 — Foundation <span class="phase-tag">Phase 1</span></h4>
           <ul>
-            <li>Finalize brand name + product names</li>
-            <li>Lock domain and Shopify theme</li>
-            <li>Order first sample pack run (200–300 units)</li>
-            <li>FDA compliance review initiated</li>
+            <li>Finalize brand name and product names</li>
+            <li>Lock domain. Confirm Shopify theme.</li>
+            <li>Order 200–300 unit sample run from GFT1</li>
+            <li>Initiate FDA compliance review</li>
           </ul>
         </div>
       </div>
@@ -1012,32 +948,32 @@
         <div class="timeline-body">
           <h4>Week 2 — Store + Email <span class="phase-tag">Phase 1</span></h4>
           <ul>
-            <li>Shopify store built: homepage, product page, science page, FAQ</li>
-            <li>Klaviyo flows built: sample flow + abandoned cart minimum</li>
-            <li>Install Recharge + UpPromote</li>
-            <li>Mobile optimization confirmed</li>
+            <li>Shopify: homepage, product page, science page, FAQ</li>
+            <li>Klaviyo: sample flow and abandoned cart built first</li>
+            <li>Install Recharge and UpPromote</li>
+            <li>Test full checkout flow end to end</li>
           </ul>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot">W3</div>
         <div class="timeline-body">
-          <h4>Week 3 — Affiliate Setup <span class="phase-tag">Phase 1</span></h4>
+          <h4>Week 3 — Associate Setup <span class="phase-tag">Phase 1</span></h4>
           <ul>
             <li>First 3–5 cannabis associate landing pages live</li>
-            <li>Associate onboarding kits sent (templates + compliance one-pager)</li>
-            <li>Collect Option A/B decision from each associate</li>
-            <li>Test full checkout flow end to end</li>
+            <li>Onboarding kits sent: templates + compliance guide</li>
+            <li>Option A or B confirmed per associate</li>
+            <li>All tracking links tested</li>
           </ul>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot">W4</div>
         <div class="timeline-body">
-          <h4>Week 4 — Soft Launch <span class="phase-tag">Phase 1</span></h4>
+          <h4>Week 4 — Launch <span class="phase-tag">Phase 1</span></h4>
           <ul>
-            <li>Associates email their lists</li>
-            <li>Monitor open rates, click rates, sample claim rate daily</li>
+            <li>Associates send to their lists</li>
+            <li>Monitor open rates, click rates, and sample claim rate daily</li>
             <li>First orders ship from GFT1</li>
             <li>Klaviyo flows activate automatically</li>
           </ul>
@@ -1048,34 +984,32 @@
         <div class="timeline-body">
           <h4>Weeks 5–6 — Optimize <span class="phase-tag">Phase 1</span></h4>
           <ul>
-            <li>Review conversion data — what's working, what isn't</li>
-            <li>Build remaining Klaviyo flows (30-day welcome, win-back)</li>
-            <li>Add more associates based on initial results</li>
-            <li>Collect first testimonials and reviews</li>
+            <li>Review conversion data — what's converting, what isn't</li>
+            <li>Build remaining flows: 30-day welcome, subscription, win-back</li>
+            <li>Collect first reviews and testimonials</li>
           </ul>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot">W8</div>
         <div class="timeline-body">
-          <h4>Week 8 — Phase 1 Assessment <span class="phase-tag">Phase 1</span></h4>
+          <h4>Week 8 — Phase 1 Report <span class="phase-tag">Phase 1</span></h4>
           <ul>
-            <li>Review all three key metrics</li>
-            <li>Reorder sample inventory if converting</li>
-            <li>Present Phase 1 results to Kent Rhodes</li>
-            <li>Begin Phase 2 planning (Boomers + Executives)</li>
+            <li>Review all three key metrics against targets</li>
+            <li>Reorder samples if converting</li>
+            <li>Present results to Kent Rhodes</li>
+            <li>Begin Phase 2 planning with real data</li>
           </ul>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot future">90+</div>
         <div class="timeline-body future">
-          <h4>Phase 2 — Boomers &amp; Executives <span class="phase-tag future">Phase 2</span></h4>
+          <h4>Phase 2 — Expand Audiences <span class="phase-tag future">Phase 2</span></h4>
           <ul>
-            <li>Funded by Phase 1 revenue</li>
-            <li>Content and SEO strategy launched</li>
-            <li>Phase 1 testimonials and social proof deployed</li>
-            <li>New messaging: Smart Aging, cognitive protection</li>
+            <li>Biohackers, Boomers, athletes, executives</li>
+            <li>Separate lists, separate messages, separate channels</li>
+            <li>Funded by Phase 1 revenue and built on Phase 1 proof</li>
           </ul>
         </div>
       </div>
@@ -1084,98 +1018,84 @@
 
   <!-- METRICS -->
   <section id="metrics">
-    <div class="section-label">Section 09</div>
+    <div class="section-label">Section 10</div>
     <h2>Phase 1 Success Metrics <span class="phase-tag">Phase 1</span></h2>
 
     <div class="metrics-row">
       <div class="metric-card">
         <div class="metric-label">Target</div>
         <div class="metric-num">&lt;$5</div>
-        <div class="metric-label">Cost Per Sample Request</div>
-        <div class="metric-desc">How much does it cost to get one person to claim a free sample? Under $5 means the model works.</div>
+        <div class="metric-label">Cost Per Sample</div>
+        <div class="metric-desc">How much to get one cannabis contact to claim a free sample. Under $5 means the model works.</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">Target</div>
         <div class="metric-num">15–25%</div>
-        <div class="metric-label">Sample → 30-Day Conversion</div>
-        <div class="metric-desc">How many sample claimants buy the full 30-day supply? The most important number in Phase 1.</div>
+        <div class="metric-label">Sample → 30-Day</div>
+        <div class="metric-desc">How many sample claimants purchase the 30-day supply. The most critical Phase 1 number.</div>
       </div>
       <div class="metric-card">
         <div class="metric-label">Target</div>
         <div class="metric-num">30–40%</div>
         <div class="metric-label">30-Day → Subscription</div>
-        <div class="metric-desc">How many 30-day buyers go monthly? This is where the business model lives.</div>
+        <div class="metric-desc">How many 30-day buyers convert to monthly. This is where recurring revenue comes from.</div>
       </div>
     </div>
 
-    <div class="card">
-      <h3>Phase 1 List Building — Beyond Associates</h3>
-      <div class="grid-3">
-        <div>
-          <strong>Exit Intent Popup</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">On all pages. Offer a free sample or science guide to capture emails before they leave.</p>
-        </div>
-        <div>
-          <strong>Science Lead Magnet</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">"The MB Stack Guide" — free PDF for the biohacker audience. Research-backed, captures email, builds credibility.</p>
-        </div>
-        <div>
-          <strong>Referral Loop</strong>
-          <p style="font-size:13px;color:#6b7280;margin-top:4px;">Every subscriber who reviews gets a referral link with 20% commission. Turns buyers into associates automatically.</p>
-        </div>
-      </div>
+    <div class="alert">
+      <strong>What Phase 1 data tells us:</strong> Actual conversion rates from the cannabis audience become the benchmark for every Phase 2 audience plan. If the cannabis list converts at 20% sample-to-purchase, we know what to expect — and what to beat — when we launch to biohackers and Boomers.
     </div>
   </section>
 
   <!-- OPEN DECISIONS -->
   <section id="decisions">
-    <div class="section-label">Section 10</div>
+    <div class="section-label">Section 11</div>
     <h2>Open Decisions — Required Before Launch</h2>
 
     <div class="alert-warn">
-      <strong>These must be resolved at the next GFT1 meeting.</strong> Each one blocks a downstream deliverable. The faster these are decided, the faster Phase 1 launches.
+      <strong>Each of these blocks a downstream deliverable.</strong> The faster the GFT1 team decides, the faster Phase 1 launches.
     </div>
 
     <div class="open-item">
       <div class="open-icon">🏷️</div>
       <div class="open-text">
         <h4>Brand Name</h4>
-        <p>BlueVero or something else? Name drives domain, packaging, and all creative. Blocks everything downstream.</p>
+        <p>BlueVero or something else? Name drives domain, packaging, and all creative assets. Nothing moves without this.</p>
       </div>
     </div>
     <div class="open-item">
       <div class="open-icon">💊</div>
       <div class="open-text">
         <h4>Product Names — MB-C and MB-CL</h4>
-        <p>Consumer-facing names needed before packaging and landing pages can be finalized.</p>
+        <p>Consumer-facing names needed before packaging and landing pages are finalized.</p>
       </div>
     </div>
     <div class="open-item">
       <div class="open-icon">💰</div>
       <div class="open-text">
         <h4>Confirmed Price Points</h4>
-        <p>Sample + 30-day + subscription. Prices in this plan are recommended — need GFT1 team sign-off.</p>
+        <p>Sample + 30-day + subscription. Prices in this plan are recommended starting points — need GFT1 sign-off.</p>
       </div>
     </div>
     <div class="open-item">
       <div class="open-icon">📧</div>
       <div class="open-text">
         <h4>Associate Option A vs. B</h4>
-        <p>Do associates email their own lists or hand over contacts? Determines who controls the first touchpoint.</p>
+        <p>Do cannabis associates email their own lists or hand over contacts? Determines who controls the first touchpoint.</p>
       </div>
     </div>
     <div class="open-item">
       <div class="open-icon">⚖️</div>
       <div class="open-text">
         <h4>FDA Compliance Review</h4>
-        <p>MB carries high regulatory risk as a supplement. Legal review required before any claims go live on the site, in email, or on packaging. This is not optional — it protects GFT1 from enforcement action.</p>
+        <p>MB carries high regulatory risk as a supplement. Legal review required before any claims go live on the site, in email, or on packaging. This is not optional.</p>
       </div>
     </div>
     <div class="open-item">
       <div class="open-icon">🔬</div>
       <div class="open-text">
-        <h4>Lab Confirmation — MB-CL (Leuco)</h4>
-        <p>Can the lab produce Leuco MB specifically? The "no staining" claim requires Leuco form. Standard MB does not deliver this. MB-C launches first. MB-CL launches only after lab confirmation.</p>
+        <h4>Lab Confirmation — MB-CL</h4>
+        <p>Can the lab produce Leuco MB? The "no staining" claim requires it. MB-C launches first. MB-CL follows only after lab confirmation.</p>
       </div>
     </div>
   </section>
@@ -1183,7 +1103,7 @@
 </main>
 
 <footer>
-  <strong>GF TechOne</strong> &nbsp;|&nbsp; Prepared by Jeffrey Najar, VP Marketing &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Confidential — Internal Use Only
+  <strong>GF TechOne</strong> &nbsp;|&nbsp; Jeffrey Najar, VP Marketing &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Confidential — Internal Use Only
 </footer>
 
 </body>
